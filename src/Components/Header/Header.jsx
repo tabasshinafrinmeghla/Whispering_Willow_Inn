@@ -7,7 +7,7 @@ const Header = () => {
   return (
     <div className='header'>
       <div >
-        <img className='w-24 rounded-full ms-10' src={img} alt="" />
+        <img className='w-24 rounded-full mt-5 ms-10' src={img} alt="" />
       </div>
 
       <div className="navbar-center  m-10">
@@ -25,6 +25,12 @@ const Header = () => {
 
         <Link className='m-5  hover:bg-sky-800 px-3 hover:text-gray-50' to="/booking">Booking</Link>
         <Link className='m-5  hover:bg-sky-800 px-3 hover:text-gray-50' to="/contact">Contact</Link>
+
+
+        
+
+
+
 
       </div>
 
