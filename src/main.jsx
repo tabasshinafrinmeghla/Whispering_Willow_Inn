@@ -11,6 +11,8 @@ import Room from './Components/pages/Room/Room';
 import Booking from './Components/pages/Booking/Booking';
 import Contact from './Components/pages/Contact/Contact';
 import About from './Components/pages/About/About';
+import VipRoom from './Components/pages/Room/VIPRoom/VipRoom';
+import AvailableRoom from './Components/pages/Room/AvailableRoom/availableRoom';
 
 
 const router = createBrowserRouter([
@@ -27,8 +29,16 @@ const router = createBrowserRouter([
         element: <About></About>
       },
       {
-        path:'/room',
+        path: '/room',
         element: <Room></Room>
+      },
+      {
+        path: '/vip room',
+        element: <VipRoom></VipRoom>
+      },
+      {
+        path: '/available room',
+        element: <AvailableRoom></AvailableRoom>
       },
       {
         path: '/booking',
