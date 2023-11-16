@@ -6,12 +6,18 @@ import img3 from '../../../img/download (3).jpg'
 import img4 from '../../../img/07032647-most-expensive-hotel-rooms-suites-in-the-world-rosewood-copy_cover_1366x768.webp'
 import img5 from '../../../img/110830032650-hotel-president-wilson.jpg'
 import { Link } from 'react-router-dom';
+import moment from 'moment';
+
 
 
 const Home = () => {
   return (
     <div>
       <BackgroundImage></BackgroundImage>
+
+
+      {/* Time date  */}
+
 
       <div className='bg-slate-800 p-7 my-8  shadow-indigo-500/40'>
         <div className='flex'>
