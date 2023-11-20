@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import './Header.css'
 import img from '../../img/WWI.jpg'
+import { FaUser } from "react-icons/fa";
 
 const Header = () => {
   return (
@@ -15,24 +16,13 @@ const Header = () => {
         <Link className='m-5  hover:bg-sky-800 px-3 hover:text-gray-50' to="/">Home</Link>
         <Link className='m-5  hover:bg-sky-800 px-3 hover:text-gray-50' to="/about">About</Link>
         <Link className='m-5  hover:bg-sky-800 px-3 hover:text-gray-50' to="/room">Room</Link>
-
-        {/* <details className="dropdown">
-          <summary className="m-1 btn">Room</summary>
-          <ul className="p-2 shadow menu dropdown-content z-[1] bg-base-100 rounded-box w-52">
-            <li><Link to="/vip room">VIP Room</Link> </li>
-            <li><Link to="/available room ">Available Room</Link> </li>
-          </ul>
-        </details> */}
-
-
-
+        
         <Link className='m-5  hover:bg-sky-800 px-3 hover:text-gray-50' to="/booking">Booking</Link>
         <Link className='m-5  hover:bg-sky-800 px-3 hover:text-gray-50' to="/contact">Contact</Link>
-
-
+       
+{/* 
+        <Link className='m-5 ' to="/contact"><FaUser /></Link> */}
         
-
-
 
 
       </div>

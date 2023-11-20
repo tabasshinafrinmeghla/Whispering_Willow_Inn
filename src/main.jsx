@@ -13,6 +13,7 @@ import Contact from './Components/pages/Contact/Contact';
 import About from './Components/pages/About/About';
 import VipRoom from './Components/pages/Room/VIPRoom/VipRoom';
 import AvailableRoom from './Components/pages/Room/AvailableRoom/availableRoom';
+import LogIn from './Components/Log In/LogIn';
 
 
 const router = createBrowserRouter([
@@ -47,6 +48,10 @@ const router = createBrowserRouter([
       {
         path: '/contact',
         element: <Contact></Contact>
+      },
+      {
+        path: '/login',
+        element: <LogIn></LogIn>
       }
     ]
 

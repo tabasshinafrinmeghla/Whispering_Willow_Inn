@@ -7,6 +7,7 @@ import img4 from '../../../img/07032647-most-expensive-hotel-rooms-suites-in-the
 import img5 from '../../../img/110830032650-hotel-president-wilson.jpg'
 import { Link } from 'react-router-dom';
 import moment from 'moment';
+import Marquee from "react-fast-marquee";
 
 
 
@@ -20,8 +21,15 @@ const Home = () => {
       {/* Time date  */}
       {/* moment().format(); */}
 
-      <p className='text-4xl'>{moment().format("dddd, MMMM Do YYYY, h:mm a")}</p>
+      <p className='text-4xl text-center'>{moment().format("dddd, MMMM Do YYYY, h:mm a")}</p>
 
+      <div className='flex'>
+        <button className="btn btn-primary btn-outline m-3 ml-20">Discount</button>
+
+        <Marquee className='mr-20'>
+          "Embrace Winter's Warmth: Enjoy a Cozy 30% Discount at Whispering Willow Inn Hotel!" Don't miss the opportunity to create unforgettable winter memories at Whispering Willow Inn. We look forward to welcoming you to our cozy haven.............           .
+        </Marquee>
+      </div>
 
 
       <div className='bg-slate-800 p-7 my-8  shadow-indigo-500/40'>
