@@ -13,6 +13,21 @@ import Marquee from "react-fast-marquee";
 
 
 const Home = () => {
+
+  // const [categories, setCategories] = useState([]);
+  // /**
+  //  * useEffect diye amra data take load kore nibo */
+
+  // useEffect(() => {
+  //   fetch('http://localhost:5000/categories')
+  //     .then(res => res.json())
+  //     .then(data => setCategories(data))
+  //     .catch(error => console.error(error))
+  // }, [])
+
+
+
+
   return (
     <div>
       <BackgroundImage></BackgroundImage>

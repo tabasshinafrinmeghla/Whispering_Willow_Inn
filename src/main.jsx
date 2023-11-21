@@ -14,6 +14,9 @@ import About from './Components/pages/About/About';
 import VipRoom from './Components/pages/Room/VIPRoom/VipRoom';
 import AvailableRoom from './Components/pages/Room/AvailableRoom/availableRoom';
 import LogIn from './Components/Log In/LogIn';
+import DifferentRoomDetails from './Components/pages/DifferentRoomDetails/DifferentRoomDetails';
+import RoomsLayout from './Components/pages/RoomsLayout/RoomsLayout';
+import DiffrentRoom from './Components/pages/Room/DiffrentRoom/DiffrentRoom';
 
 
 const router = createBrowserRouter([
@@ -53,9 +56,28 @@ const router = createBrowserRouter([
         path: '/login',
         element: <LogIn></LogIn>
       }
+      ,
+      {
+        path: '/category/:id',
+        element:<DifferentRoomDetails></DifferentRoomDetails>
+      },
+      
     ]
-
+    
+    
   },
+
+  {
+    path: 'rooms',
+    element: <RoomsLayout></RoomsLayout>,
+    children:[
+      {
+        path:':id',
+        element:<DiffrentRoom></DiffrentRoom>
+      }
+
+    ]
+  }
 ]);
 
 ReactDOM.createRoot(document.getElementById('root')).render(

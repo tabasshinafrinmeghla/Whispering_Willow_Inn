@@ -1,23 +1,18 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
+
 import { Link, Outlet, } from 'react-router-dom';
 
 
-const Room = () => {
+const RoomsLayout = () => {
 
-  const [categories, setCategories] = useState([]);
+
   /**
    * useEffect diye amra data take load kore nibo */
 
-  useEffect(() => {
-    fetch('http://localhost:5000/categories')
-      .then(res => res.json())
-      .then(data => setCategories(data))
-      .catch(error => console.error(error))
-  }, [])
+
 
   return (
     <div>
-
       <div class="grid grid-rows-3 grid-flow-col gap-4 ">
         <div class="row-span-3 md:row-span-4 ...">
           <div className='m-8 bg-slate-800 p-2'>
@@ -46,6 +41,9 @@ const Room = () => {
 
           <Outlet></Outlet>
 
+      
+
+
         </div>
       </div>
 
@@ -57,4 +55,15 @@ const Room = () => {
   );
 };
 
-export default Room;
+export default RoomsLayout;
+
+
+
+
+
+
+
+
+
+
+
